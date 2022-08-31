@@ -1,0 +1,19 @@
+package com.Anshu;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// CONDITIONAL STATEMENTS
+    //multiple if-else
+        int salary = 25400;
+        if (salary>30000){
+            salary += 3000;
+          }else if (salary>20000){
+             salary += 4000;
+         }else{
+              salary += 1000;
+          }
+          System.out.println(salary);
+    }
+}
+

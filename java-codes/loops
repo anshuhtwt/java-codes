@@ -1,0 +1,27 @@
+package com.Anshu;
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        //LOOPS
+        //for-loops
+        //print number from 1 to 5
+        for (int i = 1; i <= 5; i+=1) {
+            System.out.println(i);
+        }
+
+        //while-loops:-used when we don't know how many times the loop is running
+        int num = 1;
+        while (num<=5){
+            System.out.println(num);
+            num+=1;
+        }
+
+        //do-while-loops
+        int n = 1;
+        do {
+            System.out.println("Hello World");//although n = 1, it will print Hello World one time because condition is looked after doing that
+        }
+        while(n!=1);
+    }
+}

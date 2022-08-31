@@ -1,0 +1,33 @@
+package com.Anshu;
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+	// TYPE CASTING
+    //converting the bigger number into smaller explicitly
+         int num = (int)(67.57f);
+         System.out.println(num);
+
+    //automatic type promotion im expression
+         int a = 257;
+         byte b = (byte)(a); //type casting explicitly
+         System.out.println(b); //byte can store maximum of 256,so remainder is shown
+
+         byte c = 40;
+         byte d = 50;
+         byte e = 100;
+         int f = c*d/e;//here c*d easily exceeds the range of byte,but java is promoting each byte to int while evaluating expression(this is done in all datatypes)
+         System.out.println(f);
+
+         int number = 'A';
+         System.out.println(number);
+
+    //temperature conversion program
+         Scanner in = new Scanner(System.in);
+         System.out.println("please enter temp in c:");
+         float tempC = in.nextFloat();
+         float tempF = (tempC*1.8f)+32;
+        System.out.println(tempF);
+    }
+}
+
